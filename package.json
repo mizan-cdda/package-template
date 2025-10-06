@@ -1,0 +1,33 @@
+{
+    "name": "package-template",
+    "version": "1.0.0",
+    "description": "Package description",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.js"
+        },
+        "./*": {
+            "types": "./dist/*.d.ts",
+            "import": "./dist/*.js",
+            "require": "./dist/*.js"
+        }
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc"
+    },
+    "keywords": [
+        "keyword1",
+        "keyword2",
+        "keyword3"
+    ],
+    "author": "author-name",
+    "license": "MIT",
+    "dependencies": {
+        "better-auth": "^1.3.26"
+    }
+}
